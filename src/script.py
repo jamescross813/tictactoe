@@ -23,7 +23,7 @@ def board():
 
 
 def intro():
-    choice = input("Are you ready for a game of Tic Tac Toe? Will you be X or O?")
+    choice = input("Are you ready for a game of Tic Tac Toe? Will you be X or O?  ")
     if choice == "X" or choice == "x":
         print("You have chosen X, and go first!")
         human_turn()
@@ -36,6 +36,9 @@ def intro():
 
 def human_turn():
     print("It's your turn")
+    if turn <=9:
+        placement = input("Where do you want to place your mark?  ")
+        print(placement)
     
 def ai_turn():
     print("robo's turn")
