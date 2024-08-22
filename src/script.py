@@ -31,15 +31,19 @@ def human_turn():
     if turn <=9:
         placement = input("Where do you want to place your mark?  ")
         print(placement)
+        if spaces[(placement -1)] != "X" or spaces[(placement -1)] != "O":
+            print("yay blank space")
+        else: 
+            print(spaces[(placement -1)])
     
 def ai_turn():
     print("robo's turn")
     if turn <=9:
-        value = randint(1, 9)
-        print(value)
-        if spaces[(value -1)] != "X" or spaces[(value -1)] != "O":
+        placement = randint(1, 9)
+        print(placement)
+        if spaces[(placement -1)] != "X" or spaces[(placement -1)] != "O":
             print("yay blank space")
         else: 
-            print(spaces[(value -1)])
+            print(spaces[(placement -1)])
 # board()
 intro()
