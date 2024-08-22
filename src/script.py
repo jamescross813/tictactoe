@@ -35,7 +35,7 @@ def human_turn(choice):
         if spaces[(int_placement -1)] != "X" or spaces[(int_placement -1)] != "O":
             spaces[(int_placement -1)] = choice
         else: 
-            print("That spot already has already been filled, try again.")
+            print("That spot has already been filled, try again.")
             human_turn(choice)
         turn + 1
         board()
