@@ -18,25 +18,27 @@ def intro():
     choice = input("Are you ready for a game of Tic Tac Toe? Will you be X or O?  ")
     if choice == "X" or choice == "x":
         print("You have chosen X, and go first!")
-        human_turn()
+        human_turn(choice)
     elif choice == "O" or choice == "o":
         print("You have chosen O, and go second!")
-        ai_turn()
+        ai_turn(shape = "X")
     else:
         print("Try again")
         intro()
+
 # can probably have a seperate check function later
-def human_turn():
+def human_turn(choice):
     print("It's your turn")
     if turn <=9:
         placement = input("Where do you want to place your mark?  ")
         print(placement)
         if spaces[(placement -1)] != "X" or spaces[(placement -1)] != "O":
+            spaces[(placement -1)] = choice
             print("yay blank space")
         else: 
             print(spaces[(placement -1)])
     
-def ai_turn():
+def ai_turn(choice):
     print("robo's turn")
     if turn <=9:
         placement = randint(1, 9)
