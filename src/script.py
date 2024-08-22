@@ -1,6 +1,6 @@
 from random import randint
 
-spaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
+spaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 turn = 0
 
@@ -8,7 +8,7 @@ def board():
     print(spaces[0] + "  |  " + spaces[1] + "  |  " + spaces[2])
     print("_____________")
     print ("")
-    print(spaces[3] + "  |  " + spaces[4] + "  |"   + spaces[5])
+    print(spaces[3] + "  |  " + spaces[4] + "  |  "   + spaces[5])
     print("_____________")
     print ("")
     print(spaces[6] + "  |  " + spaces[7] + "  |  " + spaces[8])
@@ -45,5 +45,5 @@ def ai_turn():
             print("yay blank space")
         else: 
             print(spaces[(placement -1)])
-# board()
-intro()
+board()
+# intro()
