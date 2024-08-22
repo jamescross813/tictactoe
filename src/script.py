@@ -32,8 +32,9 @@ def human_turn(choice):
     if turn <=9:
         placement = input("Where do you want to place your mark?  ")
         int_placement = int(placement)
-        if spaces[(int_placement -1)] != "X" or spaces[(int_placement -1)] != "O":
+        if spaces[(int_placement -1)] != "X" and spaces[(int_placement -1)] != "O":
             spaces[(int_placement -1)] = choice
+            # not working, 
         else: 
             print("That spot has already been filled, try again.")
             human_turn(choice)
@@ -49,7 +50,7 @@ def ai_turn(shape):
     if turn <=9:
         placement = randint(1, 8)
         print(placement)
-        if spaces[(placement -1)] != "X" or spaces[(placement -1)] != "O":
+        if spaces[(placement -1)] != "X" and spaces[(placement -1)] != "O":
             spaces[(placement -1)] = shape
         else: 
             ai_turn(shape)
