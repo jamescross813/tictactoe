@@ -1,6 +1,5 @@
 from random import randint
 
-# def space():
 one = " "
 two = " "
 three = " "
@@ -27,7 +26,7 @@ def intro():
     choice = input("Are you ready for a game of Tic Tac Toe? Will you be X or O?")
     if choice == "X" or choice == "x":
         print("You have chosen X, and go first!")
-        turn()
+        human_turn()
     elif choice == "O" or choice == "o":
         print("You have chosen O, and go second!")
         ai_turn()
@@ -41,6 +40,6 @@ def human_turn():
 def ai_turn():
     print("robo's turn")
     if turn <=9:
-
+        return ("")
 # board()
 intro()
