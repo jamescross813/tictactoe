@@ -5,13 +5,13 @@ spaces = [" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "]
 turn = 0
 
 def board():
-    print(one + "  |  " + two + "  |  " + three)
+    print(spaces[0] + "  |  " + spaces[1] + "  |  " + spaces[2])
     print("_____________")
     print ("")
-    print(four + "  |  " + five + "  |"   + six)
+    print(spaces[3] + "  |  " + spaces[4] + "  |"   + spaces[5])
     print("_____________")
     print ("")
-    print(seven + "  |  " + eight + "  |  " + nine)
+    print(spaces[6] + "  |  " + spaces[7] + "  |  " + spaces[8])
 
 
 def intro():
