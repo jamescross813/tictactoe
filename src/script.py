@@ -35,16 +35,29 @@ def human_turn(choice):
         if spaces[(int_placement -1)] != "X" or spaces[(int_placement -1)] != "O":
             spaces[(int_placement -1)] = choice
         else: 
-            print(spaces[(int_placement -1)])
+            print("That spot already has already been filled, try again.")
+            human_turn(choice)
+        turn + 1
+        board()
+        if choice == "X":
+            ai_turn("O")
+        else:
+            ai_turn("X")
     
-def ai_turn(choice):
+def ai_turn(shape):
     print("robo's turn")
     if turn <=9:
-        placement = randint(1, 9)
+        placement = randint(1, 8)
         print(placement)
         if spaces[(placement -1)] != "X" or spaces[(placement -1)] != "O":
-            print("yay blank space")
+            spaces[(placement -1)] = shape
         else: 
-            print(spaces[(placement -1)])
+            ai_turn(shape)
+        turn + 1
+        board()
+        if shape == "X":
+            human_turn("O")
+        else:
+            human_turn("X")
 # board()
 intro()
