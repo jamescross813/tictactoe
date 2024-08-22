@@ -62,8 +62,10 @@ def ai_turn(shape):
             human_turn("O")
         else:
             human_turn("X")
-def slow(input)
+
+def slow(input):
     for char in input:
-    time.sleep(0.5)
-    print(char, end='')
+        time.sleep(0.5)
+        print(char, end='')
+        
 intro()
