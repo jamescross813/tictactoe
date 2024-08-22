@@ -11,7 +11,13 @@ eight = " "
 nine = " "  
 
 def board():
-    print(one + "|" + two)
+    print(one + "  |  " + two + "  |  " + three)
+    print("_____________")
+    print ("")
+    print(four + "  |  " + five + "  |"   + six)
+    print("_____________")
+    print ("")
+    print(seven + "  |  " + eight + "  |  " + nine)
 
-    
-# board()
+
+board()
