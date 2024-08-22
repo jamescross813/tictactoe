@@ -37,5 +37,9 @@ def ai_turn():
     if turn <=9:
         value = randint(1, 9)
         print(value)
+        if spaces[(value -1)] != "X" or spaces[(value -1)] != "O":
+            print("yay blank space")
+        else: 
+            print(spaces[(value -1)])
 # board()
 intro()
