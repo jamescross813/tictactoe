@@ -43,6 +43,7 @@ def human_turn():
 def ai_turn():
     print("robo's turn")
     if turn <=9:
-        return ("")
+        value = randint(1, 9)
+        print(value)
 # board()
 intro()
