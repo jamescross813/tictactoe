@@ -31,12 +31,11 @@ def human_turn(choice):
     print("It's your turn")
     if turn <=9:
         placement = input("Where do you want to place your mark?  ")
-        print(placement)
-        if spaces[(placement -1)] != "X" or spaces[(placement -1)] != "O":
-            spaces[(placement -1)] = choice
-            print("yay blank space")
+        int_placement = int(placement)
+        if spaces[(int_placement -1)] != "X" or spaces[(int_placement -1)] != "O":
+            spaces[(int_placement -1)] = choice
         else: 
-            print(spaces[(placement -1)])
+            print(spaces[(int_placement -1)])
     
 def ai_turn(choice):
     print("robo's turn")
@@ -47,5 +46,5 @@ def ai_turn(choice):
             print("yay blank space")
         else: 
             print(spaces[(placement -1)])
-board()
-# intro()
+# board()
+intro()
