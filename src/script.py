@@ -69,6 +69,9 @@ def ai_turn(shape):
         else:
             human_turn("X")
 
+def winning():
+    return("You won!!")
+
 def slow():
     time.sleep(0.5)
 
