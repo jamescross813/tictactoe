@@ -25,7 +25,7 @@ def intro():
     else:
         print("Try again")
         intro()
-
+# can probably have a seperate check function later
 def human_turn():
     print("It's your turn")
     if turn <=9:
