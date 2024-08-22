@@ -1,3 +1,4 @@
+from random import randint
 
 # def space():
 one = " "
@@ -34,10 +35,12 @@ def intro():
         print("Try again")
         intro()
 
-def turn():
+def human_turn():
     print("It's your turn")
     
 def ai_turn():
     print("robo's turn")
+    if turn <=9:
+
 # board()
 intro()
