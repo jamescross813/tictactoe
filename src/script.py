@@ -70,12 +70,14 @@ def ai_turn(shape):
             human_turn("X")
 
 def winning():
+    for space in spaces():
+        print(space)
     # match spaces:
     #         case move:
     #             return ("move")
     #         case:
     #             return ("try again")
-    return("You won!!")
+    # return("You won!!")
 
 def slow():
     time.sleep(0.5)
@@ -86,4 +88,5 @@ def slow_print(input):
         time.sleep(0.5)
         print(char, end='')
         
-intro()
+# intro()
+winning()
