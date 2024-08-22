@@ -70,8 +70,19 @@ def ai_turn(shape):
             human_turn("X")
 
 def winning():
-    for space in spaces():
-        print(space)
+    win_1 = 0, 1, 2
+    win_2 = 3, 4, 5
+    win_3 = 6, 7, 8
+    win_4 = 0, 3, 6
+    win_5 = 1, 4, 7
+    win_6 = 2, 5, 8
+    win_7 = 0, 4, 8
+    win_8 = 6, 4, 2
+    # for space in spaces():
+    #     return(space)
+    # winning (123), (456), (789), (147), (258), (369), (159), (753)
+    # if spaces[0] == "X" and spaces[1] == "X" and spaces[2] == "X":
+
     # match spaces:
     #         case move:
     #             return ("move")
