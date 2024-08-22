@@ -10,6 +10,8 @@ seven = " "
 eight = " "
 nine = " "  
 
+turn = 0
+
 def board():
     print(one + "  |  " + two + "  |  " + three)
     print("_____________")
@@ -30,5 +32,8 @@ def intro():
         print("Try again")
         intro()
 
+
+    
+
 # board()
-intro()
+# intro()
