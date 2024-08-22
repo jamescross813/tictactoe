@@ -18,6 +18,7 @@ def board():
 
 def intro():
     choice = input("Are you ready for a game of Tic Tac Toe? Will you be X or O?  ")
+    slow()
     if choice == "X" or choice == "x":
         print("You have chosen X, and go first!")
         human_turn(choice)
@@ -30,7 +31,9 @@ def intro():
 
 # can probably have a seperate check function later
 def human_turn(choice):
+    slow()
     print("It's your turn")
+    slow()
     if turn <=9:
         placement = input("Where do you want to place your mark?  ")
         int_placement = int(placement)
@@ -41,6 +44,7 @@ def human_turn(choice):
             print("That spot has already been filled, try again.")
             human_turn(choice)
         turn + 1
+        slow()
         board()
         if choice == "X":
             ai_turn("O")
@@ -48,6 +52,7 @@ def human_turn(choice):
             ai_turn("X")
     
 def ai_turn(shape):
+    slow()
     print("robo's turn")
     if turn <=9:
         placement = randint(1, 8)
@@ -57,13 +62,14 @@ def ai_turn(shape):
         else: 
             ai_turn(shape)
         turn + 1
+        slow()
         board()
         if shape == "X":
             human_turn("O")
         else:
             human_turn("X")
 
-def slow(input):
+def slow():
     time.sleep(0.5)
 
 
