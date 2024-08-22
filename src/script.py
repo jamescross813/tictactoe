@@ -1,5 +1,7 @@
 from random import randint
 
+import time
+
 spaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 turn = 0
@@ -60,5 +62,8 @@ def ai_turn(shape):
             human_turn("O")
         else:
             human_turn("X")
-# board()
+def slow(input)
+    for char in input:
+    time.sleep(0.5)
+    print(char, end='')
 intro()
