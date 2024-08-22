@@ -21,11 +21,14 @@ def board():
 
 
 def intro():
-    choice = input("readt for a game of Tic Tac Toe? Will you be X or O?")
+    choice = input("Are you ready for a game of Tic Tac Toe? Will you be X or O?")
     if choice == "X" or choice == "x":
-        print("You have chosen X, and go first")
+        print("You have chosen X, and go first!")
     elif choice == "O" or choice == "o":
-        print("You have chosen O, and go second")
+        print("You have chosen O, and go second!")
+    else:
+        print("Try again")
+        intro()
 
 # board()
 intro()
