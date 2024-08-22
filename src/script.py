@@ -64,6 +64,10 @@ def ai_turn(shape):
             human_turn("X")
 
 def slow(input):
+    time.sleep(0.5)
+
+
+def slow_print(input):
     for char in input:
         time.sleep(0.5)
         print(char, end='')
