@@ -70,26 +70,25 @@ def ai_turn(shape):
             human_turn("X")
 
 def winning():
-    win_conditions = {'win_1' :{ 0: 'X', 1: "X", 2: "X"},
-    'win_2' : {3: "X", 4: "X", 5: "X"},
-    'win_3' : {6: "X", 7: "X", 8: "X"},
-    'win_4' : {0: "X", 3: "X", 6: "X"},
-    'win_5' : {1: "X", 4: "X", 7: "X"},
-    'win_6' : {2: "X", 5: "X", 8: "X"},
-    'win_7' : {0: "X", 4: "X", 8: "X"},
-    'win_8' : {6: "X", 4: "X", 2: "X"}}
-    print(win_conditions["win_1"])
-    # for space in spaces():
-    #     return(space)
-    # winning (123), (456), (789), (147), (258), (369), (159), (753)
-    # if spaces[0] == "X" and spaces[1] == "X" and spaces[2] == "X":
+    win_conditions = {1 :{ 0: 'X', 1: "X", 2: "X"},
+    2 : {3: "X", 4: "X", 5: "X"},
+    3 : {6: "X", 7: "X", 8: "X"},
+    4 : {0: "X", 3: "X", 6: "X"},
+    5 : {1: "X", 4: "X", 7: "X"},
+    6 : {2: "X", 5: "X", 8: "X"},
+    7 : {0: "X", 4: "X", 8: "X"},
+    8 : {6: "X", 4: "X", 2: "X"},
+    9 :{ 0: 'X', 1: "X", 2: "X"},
+    10 : {3: "X", 4: "X", 5: "X"},
+    11 : {6: "X", 7: "X", 8: "X"},
+    12 : {0: "X", 3: "X", 6: "X"},
+    13 : {1: "X", 4: "X", 7: "X"},
+    14 : {2: "X", 5: "X", 8: "X"},
+    15 : {0: "X", 4: "X", 8: "X"},
+    16 : {6: "X", 4: "X", 2: "X"}}
+    
 
-    # match spaces:
-    #         case move:
-    #             return ("move")
-    #         case:
-    #             return ("try again")
-    # return("You won!!")
+   
 
 def slow():
     time.sleep(0.5)
