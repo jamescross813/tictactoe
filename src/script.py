@@ -70,14 +70,15 @@ def ai_turn(shape):
             human_turn("X")
 
 def winning():
-    win_1 = 0, 1, 2
-    win_2 = 3, 4, 5
-    win_3 = 6, 7, 8
-    win_4 = 0, 3, 6
-    win_5 = 1, 4, 7
-    win_6 = 2, 5, 8
-    win_7 = 0, 4, 8
-    win_8 = 6, 4, 2
+    win_conditions = {'win_1' :{ 0: 'X', 1: "X", 2: "X"},
+    'win_2' : {3: "X", 4: "X", 5: "X"},
+    'win_3' : {6: "X", 7: "X", 8: "X"},
+    'win_4' : {0: "X", 3: "X", 6: "X"},
+    'win_5' : {1: "X", 4: "X", 7: "X"},
+    'win_6' : {2: "X", 5: "X", 8: "X"},
+    'win_7' : {0: "X", 4: "X", 8: "X"},
+    'win_8' : {6: "X", 4: "X", 2: "X"}}
+    print(win_conditions["win_1"])
     # for space in spaces():
     #     return(space)
     # winning (123), (456), (789), (147), (258), (369), (159), (753)
