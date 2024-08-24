@@ -87,9 +87,8 @@ def winning():
     {0: "X", 4: "X", 8: "X"},
     {6: "X", 4: "X", 2: "X"}]
 
-    for i in win_conditions.keys():
-        for j in win_conditions[i]:
-            print(j)
+    for i in win_conditions:
+        print(i.keys())
 
 def slow():
     time.sleep(0.5)
