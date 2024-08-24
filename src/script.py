@@ -90,6 +90,8 @@ def winning():
     for i in win_conditions:
         print(i.keys())
 
+        # need to then go through array and compare to board/spaces==>does spaces need to be array?
+
 def slow():
     time.sleep(0.5)
 
