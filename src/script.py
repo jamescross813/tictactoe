@@ -72,10 +72,24 @@ def ai_turn(shape):
 
 def winning():
     if spaces[0] and spaces[1] and spaces[2] == "X" or spaces[0] and spaces[1] and spaces[2] == "O":
-        print("You win!!")
-    
+        print("You win!!")     
     else:
         ai_turn("O")
+
+
+
+def slow():
+    time.sleep(0.5)
+
+
+def slow_print(input):
+    for char in input:
+        time.sleep(0.5)
+        print(char, end='')
+        
+intro()
+# winning()
+
 
     # win_conditions = [{ 0: 'X', 1: "X", 2: "X"},
     # {3: "X", 4: "X", 5: "X"},
@@ -98,15 +112,3 @@ def winning():
     #     print(i.keys())
     
         # need to then go through array and compare to board/spaces==>does spaces need to be array?
-
-def slow():
-    time.sleep(0.5)
-
-
-def slow_print(input):
-    for char in input:
-        time.sleep(0.5)
-        print(char, end='')
-        
-intro()
-# winning()
