@@ -76,7 +76,15 @@ def winning():
     else:
         ai_turn("O")
 
-
+def end():
+    cont = input("Do you want to play again?  ")
+    if cont == "Yes" or cont == "Y":
+        intro()
+    elif cont == "No" or "N":
+        print("Hope to see you again soon!")
+    else:
+        print("Sorry I din't get that.....")
+        end()
 
 def slow():
     time.sleep(0.5)
