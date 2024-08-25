@@ -70,26 +70,26 @@ def ai_turn(shape):
             human_turn("X")
 
 def winning():
-    win_conditions = [{ 0: 'X', 1: "X", 2: "X"},
-    {3: "X", 4: "X", 5: "X"},
-    {6: "X", 7: "X", 8: "X"},
-    {0: "X", 3: "X", 6: "X"},
-    {1: "X", 4: "X", 7: "X"},
-    {2: "X", 5: "X", 8: "X"},
-    {0: "X", 4: "X", 8: "X"},
-    {6: "X", 4: "X", 2: "X"},
-    { 0: 'X', 1: "X", 2: "X"},
-    {3: "X", 4: "X", 5: "X"},
-    {6: "X", 7: "X", 8: "X"},
-    {0: "X", 3: "X", 6: "X"},
-    {1: "X", 4: "X", 7: "X"},
-    {2: "X", 5: "X", 8: "X"},
-    {0: "X", 4: "X", 8: "X"},
-    {6: "X", 4: "X", 2: "X"}]
+    # win_conditions = [{ 0: 'X', 1: "X", 2: "X"},
+    # {3: "X", 4: "X", 5: "X"},
+    # {6: "X", 7: "X", 8: "X"},
+    # {0: "X", 3: "X", 6: "X"},
+    # {1: "X", 4: "X", 7: "X"},
+    # {2: "X", 5: "X", 8: "X"},
+    # {0: "X", 4: "X", 8: "X"},
+    # {6: "X", 4: "X", 2: "X"},
+    # { 0: 'X', 1: "X", 2: "X"},
+    # {3: "X", 4: "X", 5: "X"},
+    # {6: "X", 7: "X", 8: "X"},
+    # {0: "X", 3: "X", 6: "X"},
+    # {1: "X", 4: "X", 7: "X"},
+    # {2: "X", 5: "X", 8: "X"},
+    # {0: "X", 4: "X", 8: "X"},
+    # {6: "X", 4: "X", 2: "X"}]
 
-    for i in win_conditions:
-        print(i.keys())
-
+    # for i in win_conditions:
+    #     print(i.keys())
+    
         # need to then go through array and compare to board/spaces==>does spaces need to be array?
 
 def slow():
