@@ -98,7 +98,7 @@ def end():
     elif cont == "No" or "N":
         print("Hope to see you again soon!")
     else:
-        print("Sorry I din't get that.....")
+        print("Sorry I didn't get that.....")
         end()
 
 def slow():
