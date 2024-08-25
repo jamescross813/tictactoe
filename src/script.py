@@ -45,6 +45,7 @@ def human_turn(choice):
             human_turn(choice)
         turn + 1
         slow()
+        winning()
         board()
         if choice == "X":
             ai_turn("O")
@@ -70,6 +71,12 @@ def ai_turn(shape):
             human_turn("X")
 
 def winning():
+    if spaces[0] and spaces[1] and spaces[2] == "X" or spaces[0] and spaces[1] and spaces[2] == "O":
+        print("You win!!")
+    
+    else:
+        ai_turn("O")
+
     # win_conditions = [{ 0: 'X', 1: "X", 2: "X"},
     # {3: "X", 4: "X", 5: "X"},
     # {6: "X", 7: "X", 8: "X"},
@@ -101,5 +108,5 @@ def slow_print(input):
         time.sleep(0.5)
         print(char, end='')
         
-# intro()
-winning()
+intro()
+# winning()
