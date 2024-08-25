@@ -72,9 +72,24 @@ def ai_turn(shape):
 
 def winning():
     if spaces[0] and spaces[1] and spaces[2] == "X" or spaces[0] and spaces[1] and spaces[2] == "O":
+        print("You win!!")  
+    elif spaces[3] and spaces[4] and spaces[5] == "X" or spaces[3] and spaces[4] and spaces[5] == "O":
+        print("You win!!")  
+    elif spaces[6] and spaces[7] and spaces[8] == "X" or spaces[6] and spaces[7] and spaces[8] == "O":
+        print("You win!!")   
+    elif spaces[0] and spaces[3] and spaces[6] == "X" or spaces[0] and spaces[3] and spaces[6] == "O":
+        print("You win!!")
+    elif spaces[1] and spaces[4] and spaces[7] == "X" or spaces[1] and spaces[4] and spaces[7] == "O":
+        print("You win!!")  
+    elif spaces[2] and spaces[5] and spaces[8] == "X" or spaces[2] and spaces[5] and spaces[8] == "O":
+        print("You win!!") 
+    elif spaces[0] and spaces[4] and spaces[8] == "X" or spaces[0] and spaces[4] and spaces[8] == "O":
         print("You win!!")     
+    elif spaces[6] and spaces[4] and spaces[2] == "X" or spaces[6] and spaces[4] and spaces[2] == "O":
+        print("You win!!")  
     else:
         ai_turn("O")
+    end()
 
 def end():
     cont = input("Do you want to play again?  ")
@@ -107,7 +122,7 @@ intro()
     # {2: "X", 5: "X", 8: "X"},
     # {0: "X", 4: "X", 8: "X"},
     # {6: "X", 4: "X", 2: "X"},
-    # { 0: 'X', 1: "X", 2: "X"},
+    # {0: 'X', 1: "X", 2: "X"},
     # {3: "X", 4: "X", 5: "X"},
     # {6: "X", 7: "X", 8: "X"},
     # {0: "X", 3: "X", 6: "X"},
