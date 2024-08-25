@@ -104,15 +104,15 @@ def end():
 def slow():
     time.sleep(0.5)
 
-
-def slow_print(input):
-    for char in input:
-        time.sleep(0.5)
-        print(char, end='')
-        
 intro()
-# winning()
 
+# def slow_print(input):
+#     for char in input:
+#         time.sleep(0.5)
+#         print(char, end='')
+        
+
+# winning()
 
     # win_conditions = [{ 0: 'X', 1: "X", 2: "X"},
     # {3: "X", 4: "X", 5: "X"},
