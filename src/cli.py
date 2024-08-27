@@ -40,7 +40,7 @@ class Cli:
             int_placement = int(placement)
             if self.spaces[(int_placement -1)] != "X" and self.spaces[(int_placement -1)] != "O":
                 self.spaces[(int_placement -1)] = choice
-                # not working, 
+                
             else: 
                 print("That spot has already been filled, try again.")
                 self.human_turn(choice)
