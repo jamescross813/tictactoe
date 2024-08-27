@@ -72,6 +72,8 @@ class Cli:
                 self.human_turn("X")
 
     def winning(self):
+        #needs to actually work out who won==> return shape to end function which will check if ai or human
+        #need to refactor this
         if self.spaces[0] and self.spaces[1] and self.spaces[2] == "X" or self.spaces[0] and self.spaces[1] and self.spaces[2] == "O":
             print("You win!!")  
         elif self.spaces[3] and self.spaces[4] and self.spaces[5] == "X" or self.spaces[3] and self.spaces[4] and self.spaces[5] == "O":
@@ -90,8 +92,10 @@ class Cli:
             print("You win!!")  
         else:
             self.ai_turn("O")
+
         self.end()
 
+    #bug in this function--> need to know how to get a cli program to close - exit()/quit()?
     def end(self):
         cont = input("Do you want to play again?  ")
         if cont == "Yes" or cont == "Y":
