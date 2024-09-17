@@ -42,33 +42,27 @@ class Cli:
                 
             else: 
                 print("That spot has already been filled, try again.")
-                self.human_turn(choice)
+                self.human_turn()
             self.turn + 1
             self.slow()
             self.winning()
             self.board()
-            if choice == "X":
-                self.ai_turn("O")
-            else:
-                self.ai_turn("X")
+            self.ai_turn()
         
-    def ai_turn(self, shape):
+    def ai_turn(self):
         self.slow()
         print("robo's turn")
         if self.turn <=9:
             placement = randint(1, 8)
             print(placement)
             if self.spaces[(placement -1)] != "X" and self.spaces[(placement -1)] != "O":
-                self.spaces[(placement -1)] = shape
+                self.spaces[(placement -1)] = "O""
             else: 
-                self.ai_turn(shape)
+                self.ai_turn()
             self.turn + 1
             self.slow()
             self.board()
-            if shape == "X":
-                self.human_turn("O")
-            else:
-                self.human_turn("X")
+            self.human_turn()
 
     def winning(self):
         #needs to actually work out who won==> return shape to end function which will check if ai or human
