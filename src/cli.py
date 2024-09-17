@@ -16,22 +16,21 @@ class Cli:
         print ("")
         print(self.spaces[6] + "  |  " + self.spaces[7] + "  |  " + self.spaces[8])
 
-
+#simplfiy by assigning letter
     def intro(self):
-        choice = input("Are you ready for a game of Tic Tac Toe? Will you be X or O?  ")
+        choice = input("Are you ready for a game of Tic Tac Toe?   Y/N")
         self.slow()
-        if choice == "X" or choice == "x":
+        if choice == "Y" or choice == "y":
             print("You have chosen X, and go first!")
-            self.human_turn(choice)
-        elif choice == "O" or choice == "o":
-            print("You have chosen O, and go second!")
-            self.ai_turn(shape = "X")
+            self.human_turn()
+        elif choice == "N" or choice == "n":
+            print("I need to end the game")
         else:
             print("Try again")
             self.intro()
 
     # can probably have a seperate check function later
-    def human_turn(self, choice):
+    def human_turn(self):
         self.slow()
         print("It's your turn")
         self.slow()
