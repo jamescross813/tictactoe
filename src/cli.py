@@ -84,14 +84,14 @@ class Cli:
         elif self.spaces[6] and self.spaces[4] and self.spaces[2] == "X" or self.spaces[6] and self.spaces[4] and self.spaces[2] == "O":
             print("You win!!")  
         else:
-            self.ai_turn("O")
+            self.ai_turn()
 
         self.end()
 
     #bug in this function--> need to know how to get a cli program to close - exit()/quit()?
     def end(self):
         cont = input("Do you want to play again?  ")
-        if cont == "Yes" or cont == "Y":
+        if cont == "Yes" or cont == "Y" or cont = "y":
             self.intro()
         elif cont == "No" or "N":
             print("Hope to see you again soon!")
