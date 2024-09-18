@@ -56,7 +56,7 @@ class Cli:
             placement = randint(1, 8)
             print(placement)
             if self.spaces[(placement -1)] != "X" and self.spaces[(placement -1)] != "O":
-                self.spaces[(placement -1)] = "O""
+                self.spaces[(placement -1)] = "O"
             else: 
                 self.ai_turn()
             self.turn + 1
