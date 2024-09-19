@@ -91,7 +91,7 @@ class Cli:
     #bug in this function--> need to know how to get a cli program to close - exit()/quit()?
     def end(self):
         cont = input("Do you want to play again?  ")
-        if cont == "Yes" or cont == "Y" or cont = "y":
+        if cont == "Yes" or cont == "Y" or cont == "y":
             self.intro()
         elif cont == "No" or "N":
             print("Hope to see you again soon!")
