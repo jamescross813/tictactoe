@@ -65,8 +65,9 @@ class Cli:
             self.human_turn()
 
     def winning(self):
-        #needs to actually work out if game is won, and who won
+        # needs to actually work out if game is won, and who won
         # need to check through board and then compare to winning conditions
+        # diagnals, columns, rows checked
         return "something"
 
     #bug in this function--> need to know how to get a cli program to close - exit()/quit()?
@@ -83,12 +84,7 @@ class Cli:
     def slow():
         time.sleep(0.5)
 
-    
-
-    # def slow_print(input):
-    #     for char in input:
-    #         time.sleep(0.5)
-    #         print(char, end='')
+   
             
 
     # winning()
