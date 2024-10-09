@@ -68,6 +68,7 @@ class Cli:
         # needs to actually work out if game is won, and who won
         # need to check through board and then compare to winning conditions
         # diagnols, columns, rows checked
+        print(self.board)
         return "something"
 
 
@@ -86,7 +87,7 @@ class Cli:
         time.sleep(0.5)
 
    
-            
+Cli.winning()
 
     # winning()
 
