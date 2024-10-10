@@ -1,3 +1,4 @@
 from cli import Cli
 
-Cli.winning()
+new_game = Cli()
+new_game.intro()
