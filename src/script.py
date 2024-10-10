@@ -1,3 +1,3 @@
 from cli import Cli
 
-Cli.intro()
+Cli.winning()
