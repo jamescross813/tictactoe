@@ -87,7 +87,7 @@ class Cli:
         time.sleep(0.5)
 
    
-Cli.winning()
+
 
     # winning()
 
