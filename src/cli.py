@@ -69,8 +69,14 @@ class Cli:
         # need to check through board and then compare to winning conditions
         # diagnols, columns, rows checked
         # check rows
-        if self.board[0] == "X":
+        if self.board[0] == "X" and self.board[1] == "X" and self.board[2]:
             return "you win!"
+        elif self.board[3] == "X" and self.board[4] == "X" and self.board[5]:
+            return "you win!"
+        elif self.board[6] == "X" and self.board[7] == "X" and self.board[8]:
+            return "you win!"
+        #check columns
+        
         return "something"
 
 
