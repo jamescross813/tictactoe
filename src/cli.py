@@ -83,6 +83,12 @@ class Cli:
         elif self.board[2] == "X" and self.board[5] == "X" and self.board[7]:
             return "you win!"
         #check diagnals
+        elif self.board[0] == "X" and self.board[4] == "X" and self.board[8]:
+            return "you win!"
+        elif self.board[2] == "X" and self.board[4] == "X" and self.board[6]:
+            return "you win!"
+        else:
+            self.ai_turn()
         return "something"
 
 
