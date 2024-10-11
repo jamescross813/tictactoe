@@ -68,7 +68,9 @@ class Cli:
         # needs to actually work out if game is won, and who won
         # need to check through board and then compare to winning conditions
         # diagnols, columns, rows checked
-        print(self.board)
+        # check rows
+        if self.board[0] == "X":
+            return "you win!"
         return "something"
 
 
