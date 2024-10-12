@@ -89,7 +89,7 @@ class Cli:
             return "you win!"
         else:
             self.ai_turn()
-        return "something"
+        # return "something"
 
 
     #bug in this function--> need to know how to get a cli program to close - exit()/quit()?
@@ -108,52 +108,3 @@ class Cli:
 
    
 
-
-    # winning()
-
-        # win_conditions = [{ 0: 'X', 1: "X", 2: "X"},
-        # {3: "X", 4: "X", 5: "X"},
-        # {6: "X", 7: "X", 8: "X"},
-        # {0: "X", 3: "X", 6: "X"},
-        # {1: "X", 4: "X", 7: "X"},
-        # {2: "X", 5: "X", 8: "X"},
-        # {0: "X", 4: "X", 8: "X"},
-        # {6: "X", 4: "X", 2: "X"},
-        # {0: 'X', 1: "X", 2: "X"},
-        # {3: "X", 4: "X", 5: "X"},
-        # {6: "X", 7: "X", 8: "X"},
-        # {0: "X", 3: "X", 6: "X"},
-        # {1: "X", 4: "X", 7: "X"},
-        # {2: "X", 5: "X", 8: "X"},
-        # {0: "X", 4: "X", 8: "X"},
-        # {6: "X", 4: "X", 2: "X"}]
-
-        # for i in win_conditions:
-        #     print(i.keys())
-        
-            # need to then go through array and compare to board/spaces==>does spaces need to be array?
-
-            
-    # def winning(self):
-    #     #needs to actually work out who won==> return shape to end function which will check if ai or human
-    #     #need to refactor this
-    #     if self.spaces[0] and self.spaces[1] and self.spaces[2] == "X" or self.spaces[0] and self.spaces[1] and self.spaces[2] == "O":
-    #         print("You win!!")  
-    #     elif self.spaces[3] and self.spaces[4] and self.spaces[5] == "X" or self.spaces[3] and self.spaces[4] and self.spaces[5] == "O":
-    #         print("You win!!")  
-    #     elif self.spaces[6] and self.spaces[7] and self.spaces[8] == "X" or self.spaces[6] and self.spaces[7] and self.spaces[8] == "O":
-    #         print("You win!!")   
-    #     elif self.spaces[0] and self.spaces[3] and self.spaces[6] == "X" or self.spaces[0] and self.spaces[3] and self.spaces[6] == "O":
-    #         print("You win!!")
-    #     elif self.spaces[1] and self.spaces[4] and self.spaces[7] == "X" or self.spaces[1] and self.spaces[4] and self.spaces[7] == "O":
-    #         print("You win!!")  
-    #     elif self.spaces[2] and self.spaces[5] and self.spaces[8] == "X" or self.spaces[2] and self.spaces[5] and self.spaces[8] == "O":
-    #         print("You win!!") 
-    #     elif self.spaces[0] and self.spaces[4] and self.spaces[8] == "X" or self.spaces[0] and self.spaces[4] and self.spaces[8] == "O":
-    #         print("You win!!")     
-    #     elif self.spaces[6] and self.spaces[4] and self.spaces[2] == "X" or self.spaces[6] and self.spaces[4] and self.spaces[2] == "O":
-    #         print("You win!!")  
-    #     else:
-    #         self.ai_turn()
-
-    #     self.end()
