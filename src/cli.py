@@ -61,8 +61,8 @@ class Cli:
                 self.ai_turn()
             self.turn + 1
             self.slow()
-            self.board()
-            self.human_turn()
+            # self.board()
+            # self.human_turn()
 
     def winning(self):
         # needs to actually work out if game is won, and who won
