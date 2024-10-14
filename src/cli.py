@@ -92,6 +92,8 @@ class Cli:
             self.ai_turn()
         # return "something"
 
+    def check_turn():
+        pass
 
     #bug in this function--> need to know how to get a cli program to close - exit()/quit()?
     def end(self):
