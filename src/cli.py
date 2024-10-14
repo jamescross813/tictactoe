@@ -31,6 +31,7 @@ class Cli:
 
     # can probably have a seperate check function later
     def human_turn(self):
+        # add in check for move, do if less the turn 9
         self.slow()
         print("It's your turn")
         self.slow()
