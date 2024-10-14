@@ -82,7 +82,7 @@ class Cli:
             return "you win!"
         elif self.board[2] == "X" and self.board[5] == "X" and self.board[7]:
             return "you win!"
-        #check diagnals
+        #check diagonals
         elif self.board[0] == "X" and self.board[4] == "X" and self.board[8]:
             return "you win!"
         elif self.board[2] == "X" and self.board[4] == "X" and self.board[6]:
