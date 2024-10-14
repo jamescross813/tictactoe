@@ -92,8 +92,12 @@ class Cli:
             self.ai_turn()
         # return "something"
 
-    def check_turn():
-        pass
+    def check_turn(self):
+        if self.turn > 9:
+            print("Draw!")
+            self.end()
+        else:
+            return "something"
 
     #bug in this function--> need to know how to get a cli program to close - exit()/quit()?
     def end(self):
