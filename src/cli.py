@@ -52,6 +52,7 @@ class Cli:
             # self.ai_turn()
         
     def ai_turn(self):
+        # need to include win check for ai
         self.check_turn()
         self.slow()
         print("robo's turn")
@@ -68,9 +69,6 @@ class Cli:
             self.human_turn()
 
     def winning(self):
-        # needs to actually work out if game is won, and who won
-        # need to check through board and then compare to winning conditions
-        # diagnols, columns, rows checked
         # check rows
         if self.board[0] == "X" and self.board[1] == "X" and self.board[2]:
             return "you win!"
@@ -97,6 +95,7 @@ class Cli:
     def check_turn(self):
         if self.turn > 9:
             print("Draw!")
+            # need actual way to end game 
             self.end()
         else:
             return "something"
