@@ -92,6 +92,30 @@ class Cli:
             self.ai_turn()
         # return "something"
 
+        def win_ai(self):
+        # check rows
+            if self.board[0] == "O" and self.board[1] == "O" and self.board[2]:
+                return "you win!"
+            elif self.board[3] == "O" and self.board[4] == "O" and self.board[5]:
+                return "you win!"
+            elif self.board[6] == "O" and self.board[7] == "O" and self.board[8]:
+                return "you win!"
+            #check columns
+            elif self.board[0] == "O" and self.board[3] == "O" and self.board[5]:
+                return "you win!"
+            elif self.board[1] == "O" and self.board[4] == "O" and self.board[6]:
+                return "you win!"
+            elif self.board[2] == "O" and self.board[5] == "O" and self.board[7]:
+                return "you win!"
+            #check diagonals
+            elif self.board[0] == "O" and self.board[4] == "O" and self.board[8]:
+                return "you win!"
+            elif self.board[2] == "O" and self.board[4] == "O" and self.board[6]:
+                return "you win!"
+            else:
+                self.human_turn()
+            # return "something"
+
     def check_turn(self):
         if self.turn > 9:
             print("Draw!")
