@@ -93,6 +93,7 @@ class Cli:
         # return "something"
 
         def win_ai(self):
+            #need to refactor these two functions into one function with variable passed in p[revious function
         # check rows
             if self.board[0] == "O" and self.board[1] == "O" and self.board[2]:
                 return "you win!"
