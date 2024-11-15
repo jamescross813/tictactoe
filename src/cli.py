@@ -65,7 +65,7 @@ class Cli:
                 self.ai_turn()
             self.turn + 1
             self.slow()
-            self.win_ai()
+            self.ai_win()
             # self.board()
             self.human_turn()
 
@@ -93,29 +93,29 @@ class Cli:
             self.ai_turn()
         # return "something"
 
-        def win_ai(self):
-            #need to refactor these two functions into one function with variable passed in previous function
+    def win_ai(self):
+        #need to refactor these two functions into one function with variable passed in previous function
         # check rows
-            if self.board[0] == "O" and self.board[1] == "O" and self.board[2]:
-                return "you win!"
-            elif self.board[3] == "O" and self.board[4] == "O" and self.board[5]:
-                return "you win!"
-            elif self.board[6] == "O" and self.board[7] == "O" and self.board[8]:
-                return "you win!"
+        if self.board[0] == "O" and self.board[1] == "O" and self.board[2]:
+            return "you win!"
+        elif self.board[3] == "O" and self.board[4] == "O" and self.board[5]:
+            return "you win!"
+        elif self.board[6] == "O" and self.board[7] == "O" and self.board[8]:
+            return "you win!"
             #check columns
-            elif self.board[0] == "O" and self.board[3] == "O" and self.board[5]:
-                return "you win!"
-            elif self.board[1] == "O" and self.board[4] == "O" and self.board[6]:
-                return "you win!"
-            elif self.board[2] == "O" and self.board[5] == "O" and self.board[7]:
-                return "you win!"
+        elif self.board[0] == "O" and self.board[3] == "O" and self.board[5]:
+            return "you win!"
+        elif self.board[1] == "O" and self.board[4] == "O" and self.board[6]:
+            return "you win!"
+        elif self.board[2] == "O" and self.board[5] == "O" and self.board[7]:
+            return "you win!"
             #check diagonals
-            elif self.board[0] == "O" and self.board[4] == "O" and self.board[8]:
-                return "you win!"
-            elif self.board[2] == "O" and self.board[4] == "O" and self.board[6]:
-                return "you win!"
-            else:
-                self.human_turn()
+        elif self.board[0] == "O" and self.board[4] == "O" and self.board[8]:
+            return "you win!"
+        elif self.board[2] == "O" and self.board[4] == "O" and self.board[6]:
+            return "you win!"
+        else:
+            self.human_turn()
             # return "something"
 
     def check_turn(self):
