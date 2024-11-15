@@ -65,10 +65,11 @@ class Cli:
                 self.ai_turn()
             self.turn + 1
             self.slow()
+            self.win_ai()
             # self.board()
             self.human_turn()
 
-    def winning(self):
+    def winning(self, shape):
         # check rows
         if self.board[0] == "X" and self.board[1] == "X" and self.board[2]:
             return "you win!"
@@ -93,7 +94,7 @@ class Cli:
         # return "something"
 
         def win_ai(self):
-            #need to refactor these two functions into one function with variable passed in p[revious function
+            #need to refactor these two functions into one function with variable passed in previous function
         # check rows
             if self.board[0] == "O" and self.board[1] == "O" and self.board[2]:
                 return "you win!"
