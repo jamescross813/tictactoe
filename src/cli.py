@@ -19,10 +19,10 @@ class Cli:
 
 #simplfiy by assigning letter
     def intro(self):
-        choice = input("Are you ready for a game of Tic Tac Toe?   Y/N")
+        choice = input("Are you ready for a game of Tic Tac Toe?   Y/N ")
         self.slow()
         if choice == "Y" or choice == "y":
-            print("You have chosen X, and go first!")
+            print("You are X, and go first!")
             self.human_turn()
         elif choice == "N" or choice == "n":
             print("I need to end the game")
