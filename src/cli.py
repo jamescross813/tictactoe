@@ -1,7 +1,7 @@
 from random import randint
 
 import time
-
+import sys
 
 class Cli:
     spaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
@@ -26,6 +26,7 @@ class Cli:
             self.human_turn()
         elif choice == "N" or choice == "n":
             print("I need to end the game")
+            sys.exit()
         else:
             print("Try again")
             self.intro()
