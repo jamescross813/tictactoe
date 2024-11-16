@@ -2,6 +2,7 @@ from random import randint
 
 import time
 
+
 class Cli:
     spaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
@@ -112,7 +113,7 @@ class Cli:
             print("Sorry I didn't get that.....")
             self.end()
 
-    def slow():
+    def slow(self):
         time.sleep(0.5)
 
 
@@ -141,5 +142,6 @@ class Cli:
     #         self.human_turn()
     #         # return "something"
 
-   
+# Cli.intro()
+
 
