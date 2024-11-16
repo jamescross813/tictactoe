@@ -50,7 +50,7 @@ class Cli:
             self.turn + 1
             self.slow()
             self.winning()
-            # self.board()
+            self.board()
             return self.ai_turn()
         
     def ai_turn(self):
