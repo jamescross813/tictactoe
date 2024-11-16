@@ -110,6 +110,7 @@ class Cli:
             self.intro()
         elif cont == "No" or "N":
             print("Hope to see you again soon!")
+            sys.exit()
         else:
             print("Sorry I didn't get that.....")
             self.end()
