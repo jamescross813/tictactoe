@@ -92,7 +92,7 @@ class Cli:
         elif self.spaces[2] == "X" and self.spaces[4] == "X" and self.spaces[6]:
             return "you win!"
         else:
-            self.ai_turn()
+            return "Next turn"
         # return "something"
         
 
