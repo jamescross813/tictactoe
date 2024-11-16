@@ -67,34 +67,33 @@ class Cli:
                 self.ai_turn()
             self.turn + 1
             self.slow()
-            self.winning("O")
+            self.winning()
             # self.board()
             self.human_turn()
 
     def winning(self):
-        print(self.board)
-        # # check rows
-        # if self.board[0] == "X" and self.board[1] == "X" and self.board[2]:
-        #     return "you win!"
-        # elif self.board[3] == "X" and self.board[4] == "X" and self.board[5]:
-        #     return "you win!"
-        # elif self.board[6] == "X" and self.board[7] == "X" and self.board[8]:
-        #     return "you win!"
-        # #check columns
-        # elif self.board[0] == "X" and self.board[3] == "X" and self.board[5]:
-        #     return "you win!"
-        # elif self.board[1] == "X" and self.board[4] == "X" and self.board[6]:
-        #     return "you win!"
-        # elif self.board[2] == "X" and self.board[5] == "X" and self.board[7]:
-        #     return "you win!"
-        # #check diagonals
-        # elif self.board[0] == "X" and self.board[4] == "X" and self.board[8]:
-        #     return "you win!"
-        # elif self.board[2] == "X" and self.board[4] == "X" and self.board[6]:
-        #     return "you win!"
-        # else:
-        #     self.ai_turn()
-        # # return "something"
+        # check rows
+        if self.spaces[0] == "X" and self.spaces[1] == "X" and self.spaces[2]:
+            return "you win!"
+        elif self.spaces[3] == "X" and self.spaces[4] == "X" and self.spaces[5]:
+            return "you win!"
+        elif self.spaces[6] == "X" and self.spaces[7] == "X" and self.spaces[8]:
+            return "you win!"
+        #check columns
+        elif self.spaces[0] == "X" and self.spaces[3] == "X" and self.spaces[5]:
+            return "you win!"
+        elif self.spaces[1] == "X" and self.spaces[4] == "X" and self.spaces[6]:
+            return "you win!"
+        elif self.spaces[2] == "X" and self.spaces[5] == "X" and self.spaces[7]:
+            return "you win!"
+        #check diagonals
+        elif self.spaces[0] == "X" and self.spaces[4] == "X" and self.spaces[8]:
+            return "you win!"
+        elif self.spaces[2] == "X" and self.spaces[4] == "X" and self.spaces[6]:
+            return "you win!"
+        else:
+            self.ai_turn()
+        # return "something"
         
 
     def check_turn(self):
