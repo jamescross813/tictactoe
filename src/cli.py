@@ -72,6 +72,7 @@ class Cli:
             self.human_turn()
 
     def winning(self):
+        print(self.board)
         # # check rows
         # if self.board[0] == "X" and self.board[1] == "X" and self.board[2]:
         #     return "you win!"
@@ -94,7 +95,7 @@ class Cli:
         # else:
         #     self.ai_turn()
         # # return "something"
-
+        
 
     def check_turn(self):
         if self.turn > 9:
