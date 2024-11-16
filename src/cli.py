@@ -17,7 +17,7 @@ class Cli:
         print ("")
         print(self.spaces[6] + "  |  " + self.spaces[7] + "  |  " + self.spaces[8])
 
-#simplfiy by assigning letter
+#could expand here by allowing choice of X or O
     def intro(self):
         choice = input("Are you ready for a game of Tic Tac Toe?   Y/N ")
         self.slow()
