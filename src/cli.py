@@ -47,7 +47,7 @@ class Cli:
                 self.human_turn()
             self.turn + 1
             self.slow()
-            self.winning()
+            self.winning("X")
             # self.board()
             # self.ai_turn()
         
@@ -65,7 +65,7 @@ class Cli:
                 self.ai_turn()
             self.turn + 1
             self.slow()
-            self.ai_win()
+            self.ai_win("O")
             # self.board()
             self.human_turn()
 
