@@ -51,7 +51,7 @@ class Cli:
             self.slow()
             self.winning()
             # self.board()
-            # self.ai_turn()
+            return self.ai_turn()
         
     def ai_turn(self):
         # need to include win check for ai
@@ -68,8 +68,8 @@ class Cli:
             self.turn + 1
             self.slow()
             self.winning()
-            # self.board()
-            self.human_turn()
+            self.board()
+            return self.human_turn()
 
     def winning(self):
         # check rows
