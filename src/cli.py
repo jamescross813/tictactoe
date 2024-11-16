@@ -42,8 +42,7 @@ class Cli:
             placement = input("Where do you want to place your mark?  ")
             int_placement = int(placement)
             if self.spaces[(int_placement -1)] != "X" and self.spaces[(int_placement -1)] != "O":
-                self.spaces[(int_placement -1)] = "X"
-                
+                self.spaces[(int_placement -1)] = "X"      
             else: 
                 print("That spot has already been filled, try again.")
                 self.human_turn()
@@ -67,7 +66,7 @@ class Cli:
                 self.ai_turn()
             self.turn + 1
             self.slow()
-            self.ai_win("O")
+            self.winning("O")
             # self.board()
             self.human_turn()
 
