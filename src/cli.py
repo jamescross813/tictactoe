@@ -57,14 +57,14 @@ class Cli:
         # need to include win check for ai
         self.check_turn()
         self.slow()
-        print("robo's turn")
         if self.turn <=9:
             placement = randint(1, 8)
-            print(placement)
             if self.spaces[(placement -1)] != "X" and self.spaces[(placement -1)] != "O":
                 self.spaces[(placement -1)] = "O"
             else: 
                 self.ai_turn()
+            print("robo's turn")
+            print(placement)
             self.turn + 1
             self.slow()
             self.winning()
