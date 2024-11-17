@@ -72,7 +72,6 @@ class Cli:
             return self.human_turn()
 
     def winning(self):
-        #currently not working
         # check rows
         if self.spaces[0] == "X" and self.spaces[1] == "X" and self.spaces[2] == "X":
             return self.win()
