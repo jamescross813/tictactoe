@@ -38,20 +38,21 @@ class Cli:
         self.slow()
         print("It's your turn")
         self.slow()
-        if self.turn <=9:
-            placement = input("Where do you want to place your mark?  ")
-            int_placement = self.make_sure_its_a_number(placement)
+        placement = input("Where do you want to place your mark?  ")
+        int_placement = self.make_sure_its_a_number(placement)
+
+    def human_turn_finish(self, int_placement):      
         if self.spaces[(int_placement -1)] != "X" and self.spaces[(int_placement -1)] != "O":
-                self.spaces[(int_placement -1)] = "X"      
+                    self.spaces[(int_placement -1)] = "X"      
         else: 
-            print("That spot has already been filled, try again.")
-            self.human_turn()
-            self.turn + 1
-            self.slow()
-            self.winning("X")
-            self.board()
-            return self.ai_turn()
-        
+                print("That spot has already been filled, try again.")
+                self.human_turn()
+        self.turn + 1
+        self.slow()
+        self.winning("X")
+        self.board()
+        return self.ai_turn()
+            
     def ai_turn(self):
         self.check_turn()
         self.slow()
@@ -129,7 +130,7 @@ class Cli:
         else: 
             print("That's not a number, try again")
             self.human_turn()
-        # return int_placement
+        return self.human_turn_finish(int_placement)
     
     def slow(self):
         time.sleep(0.5)
