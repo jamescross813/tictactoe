@@ -120,6 +120,10 @@ class Cli:
     def slow(self):
         time.sleep(0.5)
 
+    def win(self):
+        print("you win!")
+        return self.end()
+
 
         # def win_ai(self):
     #     #need to refactor these two functions into one function with variable passed in previous function
