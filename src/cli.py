@@ -75,23 +75,23 @@ class Cli:
         #currently not working
         # check rows
         if self.spaces[0] == "X" and self.spaces[1] == "X" and self.spaces[2]:
-            return "you win!"
+            return self.win()
         elif self.spaces[3] == "X" and self.spaces[4] == "X" and self.spaces[5]:
-            return "you win!"
+            return self.win()
         elif self.spaces[6] == "X" and self.spaces[7] == "X" and self.spaces[8]:
-            return "you win!"
+            return self.win()
         #check columns
         elif self.spaces[0] == "X" and self.spaces[3] == "X" and self.spaces[5]:
-            return "you win!"
+            return self.win()
         elif self.spaces[1] == "X" and self.spaces[4] == "X" and self.spaces[6]:
-            return "you win!"
+            return self.win()
         elif self.spaces[2] == "X" and self.spaces[5] == "X" and self.spaces[7]:
-            return "you win!"
+            return self.win()
         #check diagonals
         elif self.spaces[0] == "X" and self.spaces[4] == "X" and self.spaces[8]:
-            return "you win!"
+            return self.win()
         elif self.spaces[2] == "X" and self.spaces[4] == "X" and self.spaces[6]:
-            return "you win!"
+            return self.win()
         else:
             return "Next turn"
         # return "something"
