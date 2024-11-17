@@ -19,6 +19,7 @@ class Cli:
 
 #could expand here by allowing choice of X or O
     def intro(self):
+        #works if one game played, need to blank the board and not run the choice question --> seperate function?
         choice = input("Are you ready for a game of Tic Tac Toe?   Y/N ")
         self.slow()
         if choice == "Y" or choice == "y":
