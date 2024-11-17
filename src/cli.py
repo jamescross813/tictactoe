@@ -73,23 +73,23 @@ class Cli:
 
     def winning(self, shape):
         # check rows
-        if self.spaces[0] == "X" and self.spaces[1] == "X" and self.spaces[2] == "X":
+        if self.spaces[0] == shape and self.spaces[1] == shape and self.spaces[2] == shape:
             return self.win(shape)
-        elif self.spaces[3] == "X" and self.spaces[4] == "X" and self.spaces[5] == "X":
+        elif self.spaces[3] == shape and self.spaces[4] == shape and self.spaces[5] == shape:
             return self.win(shape)
-        elif self.spaces[6] == "X" and self.spaces[7] == "X" and self.spaces[8] == "X":
+        elif self.spaces[6] == shape and self.spaces[7] == shape and self.spaces[8] == shape:
             return self.win(shape)
         #check columns
-        elif self.spaces[0] == "X" and self.spaces[3] == "X" and self.spaces[5] == "X":
+        elif self.spaces[0] == shape and self.spaces[3] == shape and self.spaces[5] == shape:
             return self.win(shape)
-        elif self.spaces[1] == "X" and self.spaces[4] == "X" and self.spaces[6] == "X":
+        elif self.spaces[1] == shape and self.spaces[4] == shape and self.spaces[6] == shape:
             return self.win(shape)
-        elif self.spaces[2] == "X" and self.spaces[5] == "X" and self.spaces[7] == "X":
+        elif self.spaces[2] == shape and self.spaces[5] == shape and self.spaces[7] == shape:
             return self.win(shape)
         #check diagonals
-        elif self.spaces[0] == "X" and self.spaces[4] == "X" and self.spaces[8] == "X":
+        elif self.spaces[0] == shape and self.spaces[4] == shape and self.spaces[8] == shape:
             return self.win(shape)
-        elif self.spaces[2] == "X" and self.spaces[4] == "X" and self.spaces[6] == "X":
+        elif self.spaces[2] == shape and self.spaces[4] == shape and self.spaces[6] == shape:
             return self.win(shape)
         else:
             return "Next turn"
