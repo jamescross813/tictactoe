@@ -110,8 +110,8 @@ class Cli:
             self.end()
 
     def reset(self):
-        spaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-        print(spaces)
+        self.spaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        # print(self.spaces)
         return self.human_turn()
 
     def check_turn(self):
