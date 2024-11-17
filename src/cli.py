@@ -40,13 +40,12 @@ class Cli:
         self.slow()
         if self.turn <=9:
             placement = input("Where do you want to place your mark?  ")
-            self.make_sure_its_a_number(placement)
-
-            if self.spaces[(int_placement -1)] != "X" and self.spaces[(int_placement -1)] != "O":
-                    self.spaces[(int_placement -1)] = "X"      
-            else: 
-                    print("That spot has already been filled, try again.")
-                    self.human_turn()
+            int_placement = self.make_sure_its_a_number(placement)
+        if self.spaces[(int_placement -1)] != "X" and self.spaces[(int_placement -1)] != "O":
+                self.spaces[(int_placement -1)] = "X"      
+        else: 
+            print("That spot has already been filled, try again.")
+            self.human_turn()
             self.turn + 1
             self.slow()
             self.winning("X")
@@ -123,13 +122,15 @@ class Cli:
         else:
             return "something"
     
-    def make_sure_its_a_number(self, placement):
-        if placement != 1:
-            int_placement = int(placement)
-        else: 
-            print("That's not a number, try again")
-            self.human_turn()
-        return int_placement
+    # def make_sure_its_a_number(self, placement):
+    #     #wip currently not working
+    #     if placement == 1 or placement == 2 or placement == 3 or placement == 4 or placement == 5 or placement == 6 or placement == 7 or placement == 8 or placement == 9: 
+    #         print("maybe working")
+    #         int_placement = int(placement)   
+    #     else: 
+    #         print("That's not a number, try again")
+    #         self.human_turn()
+    #     return int_placement
     
     def slow(self):
         time.sleep(0.5)
