@@ -107,13 +107,17 @@ class Cli:
     def end(self):
         cont = input("Do you want to play again?  ")
         if cont == "Yes" or cont == "Y" or cont == "y":
-            self.intro()
+            self.reset()
         elif cont == "No" or "N":
             print("Hope to see you again soon!")
             sys.exit()
         else:
             print("Sorry I didn't get that.....")
             self.end()
+
+    def reset(self):
+        spaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        return self.human_turn()
 
     def check_turn(self):
         if self.turn > 9:
