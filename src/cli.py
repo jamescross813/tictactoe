@@ -2,6 +2,7 @@ from random import randint
 
 import time
 import sys
+import re
 
 class Cli:
     spaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
@@ -39,12 +40,12 @@ class Cli:
         self.slow()
         if self.turn <=9:
             placement = input("Where do you want to place your mark?  ")
-            int_placement = int(placement)
+
             if self.spaces[(int_placement -1)] != "X" and self.spaces[(int_placement -1)] != "O":
-                self.spaces[(int_placement -1)] = "X"      
+                    self.spaces[(int_placement -1)] = "X"      
             else: 
-                print("That spot has already been filled, try again.")
-                self.human_turn()
+                    print("That spot has already been filled, try again.")
+                    self.human_turn()
             self.turn + 1
             self.slow()
             self.winning("X")
@@ -120,7 +121,15 @@ class Cli:
             self.end()
         else:
             return "something"
-        
+    
+    def make_sure_its_a_number(self, placement):
+        if placement != 1:
+            int_placement = int(placement)
+        else: 
+            print("That's not a number, try again")
+            self.human_turn()
+        return int_placement
+    
     def slow(self):
         time.sleep(0.5)
 
