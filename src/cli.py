@@ -40,6 +40,7 @@ class Cli:
         self.slow()
         if self.turn <=9:
             placement = input("Where do you want to place your mark?  ")
+            self.make_sure_its_a_number(placement)
 
             if self.spaces[(int_placement -1)] != "X" and self.spaces[(int_placement -1)] != "O":
                     self.spaces[(int_placement -1)] = "X"      
