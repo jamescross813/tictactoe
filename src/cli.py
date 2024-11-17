@@ -74,23 +74,23 @@ class Cli:
     def winning(self):
         #currently not working
         # check rows
-        if self.spaces[0] == "X" and self.spaces[1] == "X" and self.spaces[2]:
+        if self.spaces[0] == "X" and self.spaces[1] == "X" and self.spaces[2] == "X":
             return self.win()
-        elif self.spaces[3] == "X" and self.spaces[4] == "X" and self.spaces[5]:
+        elif self.spaces[3] == "X" and self.spaces[4] == "X" and self.spaces[5] == "X":
             return self.win()
-        elif self.spaces[6] == "X" and self.spaces[7] == "X" and self.spaces[8]:
+        elif self.spaces[6] == "X" and self.spaces[7] == "X" and self.spaces[8] == "X":
             return self.win()
         #check columns
-        elif self.spaces[0] == "X" and self.spaces[3] == "X" and self.spaces[5]:
+        elif self.spaces[0] == "X" and self.spaces[3] == "X" and self.spaces[5] == "X":
             return self.win()
-        elif self.spaces[1] == "X" and self.spaces[4] == "X" and self.spaces[6]:
+        elif self.spaces[1] == "X" and self.spaces[4] == "X" and self.spaces[6] == "X":
             return self.win()
-        elif self.spaces[2] == "X" and self.spaces[5] == "X" and self.spaces[7]:
+        elif self.spaces[2] == "X" and self.spaces[5] == "X" and self.spaces[7] == "X":
             return self.win()
         #check diagonals
-        elif self.spaces[0] == "X" and self.spaces[4] == "X" and self.spaces[8]:
+        elif self.spaces[0] == "X" and self.spaces[4] == "X" and self.spaces[8] == "X":
             return self.win()
-        elif self.spaces[2] == "X" and self.spaces[4] == "X" and self.spaces[6]:
+        elif self.spaces[2] == "X" and self.spaces[4] == "X" and self.spaces[6] == "X":
             return self.win()
         else:
             return "Next turn"
