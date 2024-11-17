@@ -38,10 +38,11 @@ class Cli:
         self.slow()
         print("It's your turn")
         self.slow()
+        print(self.board()) 
         placement = input("Where do you want to place your mark?  ")
         int_placement = self.make_sure_its_a_number(placement)
 
-    def human_turn_finish(self, int_placement):      
+    def human_turn_finish(self, int_placement):    
         if self.spaces[(int_placement -1)] != "X" and self.spaces[(int_placement -1)] != "O":
                     self.spaces[(int_placement -1)] = "X"      
         else: 
