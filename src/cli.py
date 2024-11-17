@@ -49,7 +49,7 @@ class Cli:
                 self.human_turn()
             self.turn + 1
             self.slow()
-            self.winning()
+            self.winning("X")
             self.board()
             return self.ai_turn()
         
@@ -67,30 +67,30 @@ class Cli:
             print(placement)
             self.turn + 1
             self.slow()
-            self.winning()
+            self.winning("O")
             self.board()
             return self.human_turn()
 
-    def winning(self):
+    def winning(self, shape):
         # check rows
         if self.spaces[0] == "X" and self.spaces[1] == "X" and self.spaces[2] == "X":
-            return self.win()
+            return self.win(shape)
         elif self.spaces[3] == "X" and self.spaces[4] == "X" and self.spaces[5] == "X":
-            return self.win()
+            return self.win(shape)
         elif self.spaces[6] == "X" and self.spaces[7] == "X" and self.spaces[8] == "X":
-            return self.win()
+            return self.win(shape)
         #check columns
         elif self.spaces[0] == "X" and self.spaces[3] == "X" and self.spaces[5] == "X":
-            return self.win()
+            return self.win(shape)
         elif self.spaces[1] == "X" and self.spaces[4] == "X" and self.spaces[6] == "X":
-            return self.win()
+            return self.win(shape)
         elif self.spaces[2] == "X" and self.spaces[5] == "X" and self.spaces[7] == "X":
-            return self.win()
+            return self.win(shape)
         #check diagonals
         elif self.spaces[0] == "X" and self.spaces[4] == "X" and self.spaces[8] == "X":
-            return self.win()
+            return self.win(shape)
         elif self.spaces[2] == "X" and self.spaces[4] == "X" and self.spaces[6] == "X":
-            return self.win()
+            return self.win(shape)
         else:
             return "Next turn"
         # return "something"
@@ -119,7 +119,7 @@ class Cli:
     def slow(self):
         time.sleep(0.5)
 
-    def win(self):
+    def win(self, shape):
         print("you win!")
         return self.end()
 
