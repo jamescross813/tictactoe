@@ -81,11 +81,11 @@ class Cli:
         elif self.spaces[6] == shape and self.spaces[7] == shape and self.spaces[8] == shape:
             return self.win(shape)
         #check columns
-        elif self.spaces[0] == shape and self.spaces[3] == shape and self.spaces[5] == shape:
+        elif self.spaces[0] == shape and self.spaces[3] == shape and self.spaces[6] == shape:
             return self.win(shape)
-        elif self.spaces[1] == shape and self.spaces[4] == shape and self.spaces[6] == shape:
+        elif self.spaces[1] == shape and self.spaces[4] == shape and self.spaces[7] == shape:
             return self.win(shape)
-        elif self.spaces[2] == shape and self.spaces[5] == shape and self.spaces[7] == shape:
+        elif self.spaces[2] == shape and self.spaces[5] == shape and self.spaces[8] == shape:
             return self.win(shape)
         #check diagonals
         elif self.spaces[0] == shape and self.spaces[4] == shape and self.spaces[8] == shape:
