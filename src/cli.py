@@ -94,15 +94,10 @@ class Cli:
         else:
             return "Next turn"
         # return "something"
-        
 
-    def check_turn(self):
-        if self.turn > 9:
-            print("Draw!")
-            # need actual way to end game 
-            self.end()
-        else:
-            return "something"
+    def win(self, shape):
+        print("you win!")
+        return self.end()
 
     #bug in this function--> need to know how to get a cli program to close - exit()/quit()?
     def end(self):
@@ -116,12 +111,16 @@ class Cli:
             print("Sorry I didn't get that.....")
             self.end()
 
+    def check_turn(self):
+        if self.turn > 9:
+            print("Draw!")
+            # need actual way to end game 
+            self.end()
+        else:
+            return "something"
+        
     def slow(self):
         time.sleep(0.5)
-
-    def win(self, shape):
-        print("you win!")
-        return self.end()
 
 
         # def win_ai(self):
