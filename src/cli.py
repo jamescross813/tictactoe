@@ -96,7 +96,10 @@ class Cli:
         # return "something"
 
     def win(self, shape):
-        print("you win!")
+        if shape == "X":
+            print("You win!")
+        else:
+            print("You lose!")
         return self.end()
 
     #bug in this function--> need to know how to get a cli program to close - exit()/quit()?
