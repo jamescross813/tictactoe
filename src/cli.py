@@ -39,7 +39,7 @@ class Cli:
         print("It's your turn")
         self.slow()
         print(self.board()) 
-        placement = input("Where do you want to place your mark?  ")
+        placement = input("Where do you want to place your mark? (1-9)  ")
         int_placement = self.make_sure_its_a_number(placement)
 
     def human_turn_finish(self, int_placement):    
@@ -92,7 +92,7 @@ class Cli:
         elif self.spaces[2] == shape and self.spaces[4] == shape and self.spaces[6] == shape:
             return self.win(shape)
         else:
-            return "Next turn"
+            return "Next turn.."
         
     def win(self, shape):
         if shape == "X":
@@ -102,7 +102,7 @@ class Cli:
         return self.end()
 
     def end(self):
-        cont = input("Do you want to play again?  ")
+        cont = input("Do you want to play again?  Y/N")
         if cont == "Yes" or cont == "Y" or cont == "y":
             self.reset()
         elif cont == "No" or "N":
