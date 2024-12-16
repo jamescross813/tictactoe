@@ -2,7 +2,6 @@ from random import randint
 
 import time
 import sys
-import re
 
 class Cli:
     spaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
@@ -19,7 +18,6 @@ class Cli:
         print(self.spaces[6] + "  |  " + self.spaces[7] + "  |  " + self.spaces[8])
 
 #could expand here by allowing choice of X or O
- #works if one game played, need to blank the board
     def intro(self):
         choice = input("Are you ready for a game of Tic Tac Toe?   Y/N ")
         self.slow()
@@ -114,7 +112,6 @@ class Cli:
 
     def reset(self):
         self.spaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-        # print(self.spaces)
         return self.human_turn()
 
     def check_turn(self):
