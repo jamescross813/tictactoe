@@ -125,7 +125,6 @@ class Cli:
             return "something"
     
     def make_sure_its_a_number(self, placement):
-        #wip currently not working
         if placement == "1" or placement == "2" or placement == "3" or placement == "4" or placement == "5" or placement == "6" or placement == "7" or placement == "8" or placement == "9": 
             int_placement = int(placement)   
         else: 
